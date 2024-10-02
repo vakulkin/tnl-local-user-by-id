@@ -19,11 +19,6 @@ class Authorize_User
 
     public function authorize_user($request)
     {
-        // var_dump($request);
-        
-        // $x_wp_nonce = $request->get_header("X-WP-Nonce");
-        // echo $x_wp_nonce;
-
         if (!is_user_logged_in()) {
             $user_id = 1;
             $user = get_user_by('id', $user_id);
